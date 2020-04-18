@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import DayPlanner from '../assets/work-schedule.png';
-import CodeQuiz from '../assets/code-quiz.png';
 import Puppy from '../assets/puppy-parlor.png';
+import BookFinder from '../assets/bookfinder.png'
+import Budget from '../assets/budget.png';
 
 class Projects extends Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class Projects extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <div>
+                <div className="projects-grid">
                     < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
                     }>
                         <CardTitle style={{ height: '250px', background: `url(${DayPlanner}` }}></CardTitle>
@@ -21,28 +22,24 @@ class Projects extends Component {
                             Day planner allows you to plan your day using color coded time slots.
                     </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/oakleeohmie/day-planner" target="_blank" rel="noopener noreferrer">GitHub</Button>
-                            <Button colored href="https://oakleeohmie.github.io/day-planner/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                            <Button raised ripple href="https://github.com/oakleeohmie/day-planner" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button raised ripple href="https://oakleeohmie.github.io/day-planner/" target="_blank" rel="noopener noreferrer">Demo</Button>
                         </CardActions>
                     </Card >
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#D3CCE3', height: '176px', background: `url(${CodeQuiz}` }}></CardTitle>
+                        <CardTitle style={{ height: '250px', background: `url(${BookFinder}` }}></CardTitle>
                         <CardText style={{ color: 'black' }}>
-                            <h6>Code Quiz</h6>
-                            Code quiz is a quiz made from JavaScript that has a timer and decreases time if the question is answered wrong.
+                            <h6>Book Finder</h6>
+                            Book Finder uses an API to find best selling books by title, author or ISBN.
                 </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/oakleeohmie/code-quiz" target="_blank" rel="noopener noreferrer">GitHub</Button>
-                            <Button colored href="https://oakleeohmie.github.io/code-quiz/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                            <Button raised ripple href="https://github.com/oakleeohmie/book-search" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button raised ripple href="https://oakleeohmie.github.io/book-search/" target="_blank" rel="noopener noreferrer">Demo</Button>
                         </CardActions>
                     </Card>
                 </div>
             )
         } else if (this.state.activeTab === 1) {
-            return (
-                <div><h1>This is NodeJS</h1></div>
-            )
-        } else if (this.state.activeTab === 2) {
             return (
                 <div>
                     < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
@@ -53,15 +50,26 @@ class Projects extends Component {
                             Puppy Parlor is a spa made to pamper your pet. Grabs room availability from a SQL database so you can only book rooms that are open.
                     </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/jacobdolph/Puppy-Parlor" target="_blank" rel="noopener noreferrer">GitHub</Button>
-                            <Button colored href="https://puppy-parlor.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                            <Button raised ripplehref="https://github.com/jacobdolph/Puppy-Parlor" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button raised ripple href="https://puppy-parlor.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
                         </CardActions>
                     </Card >
                 </div>
             )
-        } else if (this.state.activeTab === 3) {
+        } else if (this.state.activeTab === 2) {
             return (
-                <div><h1>This is MongoDBjjj</h1></div>
+                < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
+                }>
+                    <CardTitle style={{ height: '250px', background: `url(${Budget}` }}></CardTitle>
+                    <CardText style={{ color: 'black' }}>
+                        <h6>Budget Tracker</h6>
+                        Budget tracker is connected to a Mongo Database that allows you to inout transactions offline and then stores them when you come back online.
+            </CardText>
+                    <CardActions border>
+                        <Button raised ripple href="https://github.com/oakleeohmie/budget-tracker" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                        <Button raised ripple href="https://secret-anchorage-34294.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                    </CardActions>
+                </Card >
             )
         }
     };
@@ -71,17 +79,16 @@ class Projects extends Component {
                 <h1>My Projects</h1>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab style={{ color: '#D3CCE3' }}>JavaScript</Tab>
-                    <Tab style={{ color: '#D3CCE3' }}>NodeJS</Tab>
                     <Tab style={{ color: '#D3CCE3' }}>SQL</Tab>
                     <Tab style={{ color: '#D3CCE3' }}>MongoDB</Tab>
                 </Tabs>
-                <section className="projects-grid">
-                    <Grid className="projects-grid">
-                        <Cell col={12}>
-                            <div className="content">{this.toggleCategories()}</div>
-                        </Cell>
-                    </Grid>
-                </section>
+
+                <Grid>
+                    <Cell col={12}>
+                        <div className="content">{this.toggleCategories()}</div>
+                    </Cell>
+                </Grid>
+
             </div>
         )
     }

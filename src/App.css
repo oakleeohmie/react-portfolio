@@ -58,3 +58,6 @@ padding-bottom: 4em;
   color: #D3CCE3;
   text-align: center;
 }
+.projects-grid {
+  display: flex;
+}
