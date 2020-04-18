@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Peach from './assets/mountains.jpg';
+import Background from './assets/mountains.jpg';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div>
-      <Layout style={{ backgroundImage: `url(${Peach}` }}>
+      <Layout style={{ backgroundImage: `url(${Background}` }}>
         <Header transparent title=" " style={{ color: '#D3CCE3' }}>
           <Navigation>
             <Link to="/" style={{ color: '#D3CCE3' }}>Home</Link>
