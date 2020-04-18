@@ -13,8 +13,8 @@ class Landing extends Component {
                             <hr />
                             <p> CSS | Bootsrap | JavaScript | NodeJS | React | Express | MongoDB | SQL</p>
                             <div className='social-links'>
-                                <a href="https://github.com/oakleeohmie" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/oakleeohmie/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/oakleeohmie" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/oakleeohmie/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </Cell>

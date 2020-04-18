@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import DayPlanner from '../assets/work-schedule.png';
 import CodeQuiz from '../assets/code-quiz.png';
+import Puppy from '../assets/puppy-parlor.png';
 
 class Projects extends Component {
     constructor(props) {
@@ -20,8 +21,8 @@ class Projects extends Component {
                             Day planner allows you to plan your day using color coded time slots.
                     </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/oakleeohmie/day-planner" target="_blank">GitHub</Button>
-                            <Button colored href="https://oakleeohmie.github.io/day-planner/" target="_blank">Demo</Button>
+                            <Button colored href="https://github.com/oakleeohmie/day-planner" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button colored href="https://oakleeohmie.github.io/day-planner/" target="_blank" rel="noopener noreferrer">Demo</Button>
                         </CardActions>
                     </Card >
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
@@ -31,8 +32,8 @@ class Projects extends Component {
                             Code quiz is a quiz made from JavaScript that has a timer and decreases time if the question is answered wrong.
                 </CardText>
                         <CardActions border>
-                            <Button colored href="https://github.com/oakleeohmie/code-quiz" target="_blank">GitHub</Button>
-                            <Button colored href="https://oakleeohmie.github.io/code-quiz/" target="_blank">Demo</Button>
+                            <Button colored href="https://github.com/oakleeohmie/code-quiz" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button colored href="https://oakleeohmie.github.io/code-quiz/" target="_blank" rel="noopener noreferrer">Demo</Button>
                         </CardActions>
                     </Card>
                 </div>
@@ -43,11 +44,24 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 2) {
             return (
-                <div><h1>This is SQL</h1></div>
+                <div>
+                    < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
+                    }>
+                        <CardTitle style={{ height: '250px', background: `url(${Puppy}` }}></CardTitle>
+                        <CardText style={{ color: 'black' }}>
+                            <h6>Puppy Parlor</h6>
+                            Puppy Parlor is a spa made to pamper your pet. Grabs room availability from a SQL database so you can only book rooms that are open.
+                    </CardText>
+                        <CardActions border>
+                            <Button colored href="https://github.com/jacobdolph/Puppy-Parlor" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button colored href="https://puppy-parlor.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                        </CardActions>
+                    </Card >
+                </div>
             )
         } else if (this.state.activeTab === 3) {
             return (
-                <div><h1>This is MongoDB</h1></div>
+                <div><h1>This is MongoDBjjj</h1></div>
             )
         }
     };
