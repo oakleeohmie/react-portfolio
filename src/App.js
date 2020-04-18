@@ -23,7 +23,7 @@ function App() {
             <Link to="/home" style={{ color: '#D3CCE3' }}>Home</Link>
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
             <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
-            <Link to="/portolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
+            <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
             <Link to="/resume" style={{ color: '#D3CCE3' }}>Resume</Link>
           </Navigation>
         </Drawer>

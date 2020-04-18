@@ -61,3 +61,38 @@ padding-bottom: 4em;
 .projects-grid {
   display: flex;
 }
+.contact-page {
+  background-color: rgb(54, 58, 68);
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.contact-page h1{
+  padding-top: 1.5em;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #D3CCE3;
+}
+.phone {
+  text-align: center;
+  color: #D3CCE3;
+  font-size: 2em;
+  padding: 5px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.email {
+  text-align: center;
+  color: #D3CCE3;
+  font-size: 2em;
+  padding: 5px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.contact-page hr {
+  border-top: 3px dotted white;
+  width: 55%;
+  margin: auto;
+}
