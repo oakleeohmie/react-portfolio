@@ -37,11 +37,11 @@ body {
 .social-links {
 display: flex;
 justify-content: space-between;
-width: 30%;
+width: 15%;
 margin: auto;
 }
 .social-links i {
   color: #D3CCE3;
   font-size: 4em;
-  padding: 8px;
+  padding: 5px;
 }

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div style={{ height: '500px', position: 'relative' }}>
+    <div style={{ height: '480px', position: 'relative' }}>
       <Layout style={{ backgroundImage: `url(${Peach}` }}>
         <Header transparent title=" " style={{ color: '#D3CCE3' }}>
           <Navigation>
