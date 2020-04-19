@@ -18,7 +18,7 @@ function App() {
             <Link to="/resume" style={{ color: '#D3CCE3' }}>Resume</Link>
           </Navigation>
         </Header>
-        <Drawer title="   " style={{ backgroundColor: '#0000' }}>
+        <Drawer title=" " style={{ backgroundColor: '#0000' }}>
           <Navigation>
             <Link to="/react-portfolio" style={{ color: '#D3CCE3' }}>Home</Link>
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
