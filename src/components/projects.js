@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button } from 'react-mdl';
 import DayPlanner from '../assets/work-schedule.png';
 import Puppy from '../assets/puppy-parlor.png';
 import BookFinder from '../assets/bookfinder.png'
