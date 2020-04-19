@@ -22,10 +22,6 @@ const isLocalhost = Boolean(
 
 export function register(config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-    const path = require('path');
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'index.html'));
-    });
   }
   // The URL constructor is available in all browsers that support SW.
   const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
