@@ -11,7 +11,7 @@ function App() {
       <Layout style={{ backgroundImage: `url(${Background}` }}>
         <Header transparent title=" " style={{ color: '#D3CCE3' }}>
           <Navigation>
-            <Link to="/react-portfolio" style={{ color: '#D3CCE3' }}>Home</Link>
+            <Link to="/" style={{ color: '#D3CCE3' }}>Home</Link>
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
             <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
             <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
@@ -20,7 +20,7 @@ function App() {
         </Header>
         <Drawer title=" " style={{ backgroundColor: '#0000' }}>
           <Navigation>
-            <Link to="/react-portfolio" style={{ color: '#D3CCE3' }}>Home</Link>
+            <Link to="/" style={{ color: '#D3CCE3' }}>Home</Link>
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
             <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
             <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
