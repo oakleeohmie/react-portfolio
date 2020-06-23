@@ -13,12 +13,12 @@ class About extends Component {
                             <div className='about-info'>
                                 <h3>
                                     I'm Oaklee. I'm 20 years old. I'm a full-stack web development student at the University of
-                        Utah. I currently work at a property preservation company in Salt Lake City while I go to
-                        school.
-                        After school, I plan on becoming a web developer. So far, coding has been a really challenging
-                        yet very rewarding field of study. I love learning new things and this definitely keeps me on my
-                        toes. In the future, I hope to master all types of development including both front end and back
-                        end.
+                                    Utah. I currently work at a property preservation company in Salt Lake City while I go to
+                                    school.
+                                    After school, I plan on becoming a web developer. So far, coding has been a really challenging
+                                    yet very rewarding field of study. I love learning new things and this definitely keeps me on my
+                                    toes. In the future, I hope to master all types of development including both front end and back
+                                    end.
                             </h3>
                             </div>
                         </div>

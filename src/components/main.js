@@ -4,7 +4,6 @@ import LandingPage from './landingpage';
 import About from './about';
 import Contact from './contact';
 import Projects from './projects';
-import Resume from './resume';
 
 
 const Main = () => (
@@ -13,7 +12,6 @@ const Main = () => (
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/portfolio" component={Projects} />
-        <Route exact path="/resume" component={Resume} />
-    </Switch>
+    </Switch >
 )
 export default Main;

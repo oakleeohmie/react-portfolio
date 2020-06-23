@@ -104,7 +104,7 @@ padding-bottom: 4em;
   border-radius: 10px;
 }
 .about-page h1{
-  padding-top: 1.5em;
+  padding-top: 1.2em;
   text-align: center;
   font-size: 60px;
   font-weight: bolder;
@@ -120,37 +120,24 @@ padding-bottom: 4em;
   color: #D3CCE3;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+  margin: 3px;
 }
 .resume {
-  background-color: rgb(54, 58, 68);
-  opacity: .8;
-  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
   margin: auto;
-  border-radius: 10px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 4em;
 }
-.resume h1 {
-  padding-top: 1.5em;
-  text-align: center;
-  font-size: 60px;
-  font-weight: bolder;
-  color: #D3CCE3;
-}
-.resume hr {
-  border-top: 3px dotted white;
-  width: 55%;
-  margin: auto;
-}
-.resume h6 {
-  text-align: center;
-  font-size: 30px;
-  color: #D3CCE3;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-.resume-img {
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
-  padding-bottom: 1.5rem;
+
+.resumebutton {
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+      width: 190px;
+      height: 40px; 
+      background-color: rgb(54, 58, 68);
+      color: #D3CCE3;
 }

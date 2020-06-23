@@ -15,7 +15,7 @@ function App() {
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
             <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
             <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
-            <Link to="/resume" style={{ color: '#D3CCE3' }}>Resume</Link>
+
           </Navigation>
         </Header>
         <Drawer title=" " style={{ backgroundColor: '#0000' }}>
@@ -24,7 +24,7 @@ function App() {
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
             <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
             <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
-            <Link to="/resume" style={{ color: '#D3CCE3' }}>Resume</Link>
+
           </Navigation>
         </Drawer>
         <Content>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Button } from 'react-mdl';
+import ResumePDF from '../assets/Resume.pdf'
 
 class Landing extends Component {
     render() {
@@ -15,6 +16,9 @@ class Landing extends Component {
                             <div className='social-links'>
                                 <a href="https://github.com/oakleeohmie" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 <a href="https://www.linkedin.com/in/oakleeohmie/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div className='resume'>
+                                < a className='resumebutton' ripple href={ResumePDF} target="_blank" rel="noopener noreferrer"> VIEW RESUMÉ </a>
                             </div>
                         </div>
                     </Cell>
