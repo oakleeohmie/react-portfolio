@@ -13,7 +13,6 @@ function App() {
           <Navigation>
             <Link to="/" style={{ color: '#D3CCE3' }}>Home</Link>
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
-            <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
             <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
 
           </Navigation>
@@ -22,7 +21,6 @@ function App() {
           <Navigation>
             <Link to="/" style={{ color: '#D3CCE3' }}>Home</Link>
             <Link to="/about" style={{ color: '#D3CCE3' }}>About Me</Link>
-            <Link to="/contact" style={{ color: '#D3CCE3' }}>Contact Me</Link>
             <Link to="/portfolio" style={{ color: '#D3CCE3' }}>Portfolio</Link>
 
           </Navigation>
