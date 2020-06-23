@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button } from 'react-mdl';
 import DayPlanner from '../assets/work-schedule.png';
-import Puppy from '../assets/puppy-parlor.png';
+import Employee from '../assets/employee-directory.png';
 import BookFinder from '../assets/bookfinder.png'
 import Budget from '../assets/budget.png';
+import Fitness from '../assets/fitness.png';
 
 class Projects extends Component {
     constructor(props) {
@@ -44,32 +45,46 @@ class Projects extends Component {
                 <div>
                     < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
                     }>
-                        <CardTitle style={{ height: '250px', background: `url(${Puppy}` }}></CardTitle>
+                        <CardTitle style={{ height: '250px', background: `url(${Employee}` }}></CardTitle>
                         <CardText style={{ color: 'black' }}>
-                            <h6>Puppy Parlor</h6>
-                            Puppy Parlor is a spa made to pamper your pet. Grabs room availability from a SQL database so you can only book rooms that are open.
+                            <h6>Employee Directory</h6>
+                            Employee directory is a react app that allows you to sort through employees alphabetically by first name, preferred coding language or by phone number.
+
                     </CardText>
                         <CardActions border>
-                            <Button raised ripplehref="https://github.com/jacobdolph/Puppy-Parlor" target="_blank" rel="noopener noreferrer">GitHub</Button>
-                            <Button raised ripple href="https://puppy-parlor.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                            <Button raised ripplehref="https://github.com/oakleeohmie/user-directory" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button raised ripple href="https://oakleeohmie-user-directory.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
                         </CardActions>
                     </Card >
                 </div>
             )
         } else if (this.state.activeTab === 2) {
             return (
-                < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
-                }>
-                    <CardTitle style={{ height: '250px', background: `url(${Budget}` }}></CardTitle>
-                    <CardText style={{ color: 'black' }}>
-                        <h6>Budget Tracker</h6>
+                <div className="projects-grid">
+                    < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }
+                    }>
+                        <CardTitle style={{ height: '250px', background: `url(${Budget}` }}></CardTitle>
+                        <CardText style={{ color: 'black' }}>
+                            <h6>Budget Tracker</h6>
                         Budget tracker is connected to a Mongo Database that allows you to inout transactions offline and then stores them when you come back online.
             </CardText>
-                    <CardActions border>
-                        <Button raised ripple href="https://github.com/oakleeohmie/budget-tracker" target="_blank" rel="noopener noreferrer">GitHub</Button>
-                        <Button raised ripple href="https://secret-anchorage-34294.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
-                    </CardActions>
-                </Card >
+                        <CardActions border>
+                            <Button raised ripple href="https://github.com/oakleeohmie/budget-tracker" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button raised ripple href="https://secret-anchorage-34294.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                        </CardActions>
+                    </ Card>
+                    < Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ height: '250px', background: `url(${Fitness}` }}></CardTitle>
+                        <CardText style={{ color: 'black' }}>
+                            <h6>Fitness Tracker</h6>
+                    Fitness tracker is a tracker that allows you to record your exercises and stores them in a MongoDB database.
+        </CardText>
+                        <CardActions border>
+                            <Button raised ripple href="https://github.com/oakleeohmie/fitness-tracker" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                            <Button raised ripple href="https://tranquil-bayou-18491.herokuapp.com/" target="_blank" rel="noopener noreferrer">Demo</Button>
+                        </CardActions>
+                    </Card >
+                </div>
             )
         }
     };
@@ -79,7 +94,7 @@ class Projects extends Component {
                 <h1>My Projects</h1>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab style={{ color: '#D3CCE3' }}>JavaScript</Tab>
-                    <Tab style={{ color: '#D3CCE3' }}>SQL</Tab>
+                    <Tab style={{ color: '#D3CCE3' }}>REACT</Tab>
                     <Tab style={{ color: '#D3CCE3' }}>MongoDB</Tab>
                 </Tabs>
 

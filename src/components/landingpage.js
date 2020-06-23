@@ -17,6 +17,7 @@ class Landing extends Component {
                                 <a href="https://github.com/oakleeohmie" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 <a href="https://www.linkedin.com/in/oakleeohmie/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
                             </div>
+
                             <div className='resume'>
                                 < a className='resumebutton' ripple href={ResumePDF} target="_blank" rel="noopener noreferrer"> VIEW RESUMÉ </a>
                             </div>
