@@ -15,7 +15,9 @@ const Projects = (props) => {
         if (activeTab !== tab) setActiveTab(tab);
     }
     return (
-        <div>
+        <div className='category-tabs'>
+            <h1>My Projects</h1>
+            <hr />
             <Nav tabs>
                 <NavItem>
                     <NavLink
